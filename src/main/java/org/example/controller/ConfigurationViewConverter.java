@@ -3,7 +3,7 @@ package org.example.controller;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.DatabindException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.example.model.ConfigurationView;
+import org.example.model.SimulationView;
 
 import java.io.File;
 import java.io.IOException;
@@ -17,9 +17,9 @@ public class ConfigurationViewConverter {
     }
 
 
-    public ConfigurationView convertToView(File selectedFilePath) {
+    public SimulationView convertToView(File selectedFilePath) {
         try {
-            return objectMapper.readValue(selectedFilePath, ConfigurationView.class);
+            return objectMapper.readValue(selectedFilePath, SimulationView.class);
         } catch (DatabindException databindException) {
             throw new RuntimeException("Le json ne corresponds pas", databindException);
         } catch (IOException e) {

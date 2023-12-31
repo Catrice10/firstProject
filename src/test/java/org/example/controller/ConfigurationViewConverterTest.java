@@ -1,6 +1,6 @@
 package org.example.controller;
 
-import org.example.model.ConfigurationView;
+import org.example.model.SimulationView;
 import org.example.model.metadata.Metadonnees;
 import org.example.model.metadata.UsineMetadata;
 import org.junit.jupiter.api.Test;
@@ -21,7 +21,7 @@ public class ConfigurationViewConverterTest {
     void loadViewFromJson() throws URISyntaxException {
         URL resource = getClass().getClassLoader().getResource("successfullConfiguration.json");
 
-        ConfigurationView configurationView = configurationViewConverter.convertToView(new File(resource.toURI()));
+        SimulationView configurationView = configurationViewConverter.convertToView(new File(resource.toURI()));
 
         Metadonnees metadonnees = configurationView.getMetadonnees();
         assertThat(metadonnees).isNotNull();

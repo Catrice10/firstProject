@@ -7,8 +7,10 @@ import lombok.Setter;
 @Setter
 public class Usine {
 
-    private String type;
     private int id;
+    private String type;
+    private String stage;
     private int x;
     private int y;
+
 }

@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.controller.SimulationViewObserver;
 import org.example.view.MenuCharger;
 
 import java.awt.event.ActionEvent;
@@ -19,8 +20,8 @@ public class MenuFenetre extends JMenuBar {
 	private static final String MENU_AIDE_TITRE = "Aide";
 	private static final String MENU_AIDE_PROPOS = "� propos de...";
 
-	public MenuFenetre() {
-		ajouterMenuFichier();
+	public MenuFenetre(SimulationViewObserver usineViewRenderer) {
+		ajouterMenuFichier(usineViewRenderer);
 		ajouterMenuSimulation();
 		ajouterMenuAide();
 	}
@@ -28,9 +29,9 @@ public class MenuFenetre extends JMenuBar {
 	/**
 	 * Cr�er le menu de Fichier
 	 */
-	private void ajouterMenuFichier() {
+	private void ajouterMenuFichier(SimulationViewObserver usineViewRenderer) {
 		JMenu menuFichier = new JMenu(MENU_FICHIER_TITRE);
-		JMenuItem menuCharger = new MenuCharger();
+		JMenuItem menuCharger = new MenuCharger(usineViewRenderer);
 		JMenuItem menuQuitter = new JMenuItem(MENU_FICHIER_QUITTER);
 		
 		menuQuitter.addActionListener((ActionEvent e) -> {

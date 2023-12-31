@@ -3,7 +3,7 @@ package org.example.model;
 import org.example.model.simulation.Simulation;
 import org.example.model.metadata.Metadonnees;
 
-public class ConfigurationView {
+public class SimulationView {
     private Metadonnees metadonnees;
     private Simulation simulation;
 

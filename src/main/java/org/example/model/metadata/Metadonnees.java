@@ -5,7 +5,6 @@ import java.util.List;
 public class Metadonnees {
     private List<UsineMetadata> usine;
 
-    // getter and setter
 
     public List<UsineMetadata> getUsine() {
         return usine;

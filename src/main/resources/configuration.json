@@ -7,19 +7,19 @@
           "icone": [
             {
               "type": "vide",
-              "path": "src/ressources/UMP0%.png"
+              "path": "UMP0%.png"
             },
             {
               "type": "un-tiers",
-              "path": "src/ressources/UMP33%.png"
+              "path": "UMP33%.png"
             },
             {
               "type": "deux-tiers",
-              "path": "src/ressources/UMP66%.png"
+              "path": "UMP66%.png"
             },
             {
               "type": "plein",
-              "path": "src/ressources/UMP100%.png"
+              "path": "UMP100%.png"
             }
           ]
         },
@@ -34,19 +34,19 @@
           "icone": [
             {
               "type": "vide",
-              "path": "src/ressources/UT0%.png"
+              "path": "UT0%.png"
             },
             {
               "type": "un-tiers",
-              "path": "src/ressources/UT33%.png"
+              "path": "UT33%.png"
             },
             {
               "type": "deux-tiers",
-              "path": "src/ressources/UT66%.png"
+              "path": "UT66%.png"
             },
             {
               "type": "plein",
-              "path": "src/ressources/UT100%.png"
+              "path": "UT100%.png"
             }
           ]
         },
@@ -65,19 +65,19 @@
           "icone": [
             {
               "type": "vide",
-              "path": "src/ressources/UM0%.png"
+              "path": "UM0%.png"
             },
             {
               "type": "un-tiers",
-              "path": "src/ressources/UM33%.png"
+              "path": "UM33%.png"
             },
             {
               "type": "deux-tiers",
-              "path": "src/ressources/UM66%.png"
+              "path": "UM66%.png"
             },
             {
               "type": "plein",
-              "path": "src/ressources/UM100%.png"
+              "path": "UM100%.png"
             }
           ]
         },
@@ -96,19 +96,19 @@
           "icone": [
             {
               "type": "vide",
-              "path": "src/ressources/UA0%.png"
+              "path": "UA0%.png"
             },
             {
               "type": "un-tiers",
-              "path": "src/ressources/UA33%.png"
+              "path": "UA33%.png"
             },
             {
               "type": "deux-tiers",
-              "path": "src/ressources/UA66%.png"
+              "path": "UA66%.png"
             },
             {
               "type": "plein",
-              "path": "src/ressources/UA100%.png"
+              "path": "UA100%.png"
             }
           ]
         },
@@ -133,19 +133,19 @@
           "icone": [
             {
               "type": "vide",
-              "path": "src/ressources/E0%.png"
+              "path": "E0%.png"
             },
             {
               "type": "un-tiers",
-              "path": "src/ressources/E33%.png"
+              "path": "E33%.png"
             },
             {
               "type": "deux-tiers",
-              "path": "src/ressources/E66%.png"
+              "path": "E66%.png"
             },
             {
               "type": "plein",
-              "path": "src/ressources/E100%.png"
+              "path": "E100%.png"
             }
           ]
         },
