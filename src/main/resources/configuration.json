@@ -1,0 +1,92 @@
+{
+  "metadonnees": {
+    "usine": [
+      {
+        "icones": {
+          "icone": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "sortie": "",
+        "interval-production": 100
+      },
+      {
+        "icones": {
+          "icone": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "entree": "",
+        "sortie": "",
+        "interval-production": 50
+      },
+      {
+        "icones": {
+          "icone": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "entree": "",
+        "sortie": "",
+        "interval-production": 75
+      },
+      {
+        "icones": {
+          "icone": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "entree": [
+          "",
+          ""
+        ],
+        "sortie": "",
+        "interval-production": 110
+      },
+      {
+        "icones": {
+          "icone": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "entree": ""
+      }
+    ]
+  },
+  "simulation": {
+    "usine": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "chemins": {
+      "chemin": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    }
+  }
+}
