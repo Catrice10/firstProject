@@ -1,6 +1,7 @@
 package org.example.view;
 
 import org.example.controller.ConfigurationViewConverter;
+import org.example.model.ConfigurationView;
 
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
@@ -31,7 +32,7 @@ public class MenuCharger extends JMenuItem {
         if (returnValue == JFileChooser.APPROVE_OPTION) {
             // TODO - Parser le fichier XML s�lectionn�
             File selectedFile = fileChooser.getSelectedFile();
-            configurationViewConverter.convertToView(selectedFile);
+            ConfigurationView configurationView = configurationViewConverter.convertToView(selectedFile);
             System.out.println(selectedFile.getAbsolutePath());
         }
     }

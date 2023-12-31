@@ -1,11 +1,29 @@
 package org.example.controller;
 
+import com.fasterxml.jackson.core.JsonParser;
+import com.fasterxml.jackson.databind.DatabindException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.example.model.ConfigurationView;
 
 import java.io.File;
+import java.io.IOException;
 
 public class ConfigurationViewConverter {
-    public ConfigurationView convertToView(File selectedFile) {
-        return null;
+    private final ObjectMapper objectMapper = new ObjectMapper();
+
+
+    public ConfigurationViewConverter() {
+        objectMapper.enable(JsonParser.Feature.ALLOW_COMMENTS);
+    }
+
+
+    public ConfigurationView convertToView(File selectedFilePath) {
+        try {
+            return objectMapper.readValue(selectedFilePath, ConfigurationView.class);
+        } catch (DatabindException databindException) {
+            throw new RuntimeException("Le json ne corresponds pas", databindException);
+        } catch (IOException e) {
+            throw new RuntimeException("je ne sais pas ce quil sest passé", e);
+        }
     }
 }

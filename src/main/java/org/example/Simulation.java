@@ -1,5 +1,7 @@
 package org.example;
 
+import javax.swing.*;
+
 public class Simulation {
 
 	/**
@@ -11,6 +13,12 @@ public class Simulation {
 
 		environnement.addPropertyChangeListener(fenetre);
 		environnement.execute();
+
+		while(true) {
+			if(environnement.getState() == SwingWorker.StateValue.DONE) {
+				System.out.println("DONE !!!!!!!!");
+			}
+		}
 	}
 
 }
